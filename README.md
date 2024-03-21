@@ -4,7 +4,7 @@ This code demonstrates how to create a many-to-many relationship between songs a
 
 It includes ON DELETE CASCADE which allows us to delete a song simultaneously from every playlist and from the database. It also allows us to delete a playlist without deleting the songs from the playlist.
 
-This many-to-many relationship includes a lookup table called `playlistSongs`. This table stores two ids. The id of the song and the id of the playlist. The songs table and the playlist table both have a one to many relationship with the lookup table. This creates a many-to-many relationship between songs and playlists.
+This many-to-many relationship includes a lookup table called `playlistSongs`, whose sole job is to connect the songs table and the playlists table by id. This table stores two ids. The id of the song and the id of the playlist. The songs table and the playlist table both have a one to many relationship with the lookup table. This creates a many-to-many relationship between songs and playlists.
 
 Mentally challenging, yes. See the ERD below.
 
