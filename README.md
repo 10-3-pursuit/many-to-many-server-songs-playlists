@@ -1,6 +1,6 @@
 # Many-To-Many
 
-This code shows how to create a many-to-many relationship between songs and playlists. A song can have many playlists and a playlist can have many songs.
+This code demonstrates how to create a many-to-many relationship between songs and playlists. A song can have many playlists and a playlist can have many songs.
 
 It includes ON DELETE CASCADE which allows us to delete a song simultaneously from every playlist and from the database. It also allows us to delete a playlist without delete the songs from the playlist.
 
