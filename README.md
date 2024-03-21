@@ -10,7 +10,7 @@ Mentally challenging, yes. See the ERD below.
 
 What is important to remember is:
 
-In order to retrieve all the songs in a playlist OR all the playlists in which a song is included, you must SELECT FROM the `playlistSongs` table and JOIN ON the other two tables based on their ids. This gives you access to all of the information that connects every song and playlist. See the `getAllSongPlaylists` function in `queries/songs.js` and the `songsFromPlaylist` function in the `queries/playlists.js`
+In order to retrieve **all the songs in a playlist** or **all the playlists in which a song is included**, you must SELECT FROM the `playlistSongs` table and JOIN ON the other two tables based on their ids. This gives you access to all of the information that connects every song and playlist. See the `getAllSongPlaylists` function in `queries/songs.js` and the `songsFromPlaylist` function in the `queries/playlists.js`
 
 In order to add to a playlist, you simply INSERT INTO the playlistSongs table, the playlist_id for the playlist you are referring to and the song_id for the song you are adding. See `db/seed.sql` for the seeding of the lookup table to see how we add the songs to a playlist.
 
