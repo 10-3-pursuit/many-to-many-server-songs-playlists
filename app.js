@@ -1,24 +1,24 @@
-const express = require('express')
-const cors = require('cors')
-const playlistController = require('./controllers/playlistController')
-const songController = require('./controllers/songController')
-const app = express()
+const express = require("express");
+const cors = require("cors");
+const playlistController = require("./controllers/playlistController");
+const songController = require("./controllers/songController");
+const app = express();
 
-app.use(cors())
-app.use(express.json())
+app.use(cors());
+app.use(express.json());
 
 // CONTROLLERS
-app.use('/api/playlists', playlistController)
-app.use('/api/songs', songController)
+app.use("/api/playlists", playlistController);
+app.use("/api/songs", songController);
 
 // ROUTES
-app.get('/', (req, res) => {
-  res.send('Welcome to Bookmarks App')
-})
+app.get("/", (req, res) => {
+  res.send("Welcome to the Many To Many Songs and Plalists Server");
+});
 
 // 404 PAGE
-app.get('*', (req, res) => {
-  res.json({ error: 'Page not found' })
-})
+app.get("*", (req, res) => {
+  res.json({ error: "Page not found" });
+});
 // EXPORT
-module.exports = app
+module.exports = app;
