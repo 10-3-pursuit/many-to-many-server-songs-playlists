@@ -1,4 +1,4 @@
-# Many-To-Many
+# Many-To-Many Songs and Playlists
 
 This code demonstrates how to create a many-to-many relationship between songs and playlists. A song can have many playlists and a playlist can have many songs.
 
