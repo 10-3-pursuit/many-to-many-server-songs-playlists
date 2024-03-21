@@ -8,4 +8,4 @@ This many-to-many relationship includes a lookup table called `playlistSongs`. T
 
 `ERD`
 
-<img src="table.png" height="300" width="500">
+<img src="table.png" height="400" width="700">
