@@ -6,8 +6,11 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
+
+// CONTROLLERS
 app.use('/api/playlists', playlistController)
 app.use('/api/songs', songController)
+
 // ROUTES
 app.get('/', (req, res) => {
   res.send('Welcome to Bookmarks App')
