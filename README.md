@@ -16,4 +16,4 @@ In order to add to a playlist, you simply INSERT INTO the playlistSongs table, t
 
 `ERD`
 
-<img src="erd.png" height="400" width="700">
+<img src="/assets/erd.png" height="400" width="700">
