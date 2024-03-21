@@ -18,10 +18,11 @@ song.get('/', async (_req, res) => {
   }
 })
 
-song.get('/:id/playlists', async (req, res) => {
-  const { id } = req.params
+//get all playlists a song is included in
+song.get('/:song_id/playlists', async (req, res) => {
+  const { song_id } = req.params
 
-  const songPlaylists = await getAllSongPlaylists(id)
+  const songPlaylists = await getAllSongPlaylists(song_id)
 
   if (songPlaylists[0]) {
     res.status(200).json(songPlaylists)

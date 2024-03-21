@@ -22,6 +22,9 @@ playlist.get('/', async (req, res) => {
   }
 })
 
+//get all songs in a playlist by name
+// you could also use the playlist_id as a parameter `/:playlist_id/songs
+
 playlist.get('/songs', async (req, res) => {
   const { name } = req.query
   const songsFromPlaylist = await getSongsFromPlaylist(name)
@@ -42,4 +45,5 @@ playlist.delete('/:id', async (req, res) => {
     res.status(404).json({ error: 'Id not found' })
   }
 })
+
 module.exports = playlist
