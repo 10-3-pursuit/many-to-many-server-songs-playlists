@@ -14,4 +14,4 @@ In order to retrieve all the songs in a playlist OR all the playlists in which a
 
 `ERD`
 
-<img src="table.png" height="400" width="700">
+<img src="erd.png" height="400" width="700">
